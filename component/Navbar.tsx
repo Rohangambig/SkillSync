@@ -1,6 +1,8 @@
 import Link from "next/link";
 import styles from "./NavBar.module.css";
 export default function NavBar() {
+
+  const isLogin = true;
   return (
     <nav className={styles.navContainer}>
       <ul className={styles.nav}>
@@ -12,12 +14,11 @@ export default function NavBar() {
           <i className="fas fa-search"></i>
           <p>Search</p>
         </li>
+        
         <li>
-          <button>Login</button>
+
         </li>
-        <li>
-          <button>Employer Sign-up</button>
-        </li>
+
       </ul>
     </nav>
   );
