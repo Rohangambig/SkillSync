@@ -1,4 +1,5 @@
 import NavBar from "@/component/Navbar";
+import '../styles/global.css'
 
 export default function RootLayout({
   children,
@@ -13,7 +14,7 @@ export default function RootLayout({
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
         />
       </head>
-      <body>
+      <body className="container">
         <NavBar></NavBar>
         {children}
       </body>
