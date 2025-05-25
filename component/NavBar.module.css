@@ -39,6 +39,7 @@
   position: relative;
 }
 
+
 .navSearch > i {
   position: absolute;
   right: 10px;
@@ -60,5 +61,6 @@
 
 .navActions  > button {
   background-color: transparent;
+  border: none;
 }
 
