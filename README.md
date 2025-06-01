@@ -17,7 +17,7 @@
 
 
 ## Database Schema  
-![Alt text](https://github.com/Rohangambig/SkillSync/blob/main/Schema%20Representation.png)
+![Alt text](https://github.com/Rohangambig/SkillSync/blob/main/skill-sync/Schema%20Representation.png)
 
 ### Key Components:
 1. **Frontend (Angular Js)**: The user interface for interacting with the project, handling user registration, login, and profile management.
