@@ -1,0 +1,36 @@
+:root {
+    --bg-color:#ffffff;
+    --text-color:#000000;
+    --nav-color:#f3f3f3;
+}
+
+[data-theme='dark'] {
+     --bg-color: #121212;
+    --text-color: #ffffff;
+    --nav-color:#2f2f2f;
+}
+
+
+.container {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 1rem 5rem;
+}
+
+a {
+    color: var(--primary-color);
+}
+
+nav {
+    background-color: var(--nav-color);
+}
+
+i {
+    color: var(--text-color);
+}
+
+ /* button  {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border: 1px solid var(--primary-color);
+} */
