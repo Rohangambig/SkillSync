@@ -1,0 +1,18 @@
+const express = require('express');
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+
+dotenv.config();
+
+const app =  express()
+app.use(cors())
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({extended :  true}));
+
+const PORT = process.env.PORT || 5002
+
+app.listen(PORT,() => {
+    console.log("Server is listening the port",PORT)
+})
