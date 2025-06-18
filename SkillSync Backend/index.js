@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 const cors = require('cors');
+const userRouter = require('./router/user')
 
 dotenv.config();
 
@@ -24,7 +25,7 @@ mongoose.connect(process.env.MONGO_URL, {
   console.error("Error in database connection:", err.message);
 });
 
-
+app.use('/user',userRouter);
 
 app.listen(PORT,() => {
     console.log("Server is listening the port",PORT)
