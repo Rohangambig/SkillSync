@@ -1,0 +1,66 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px;
+  border-radius: 7px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.navHeadings {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navSearch {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navActions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+}
+
+.navSearch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+
+.navSearch > i {
+  position: absolute;
+  right: 10px;
+  color: #555; 
+  opacity: 0.7;
+}
+
+.navSearch > input {
+  border-radius: 5px;
+  border: none;
+  padding: 3px;
+  padding-right: 30px;
+}
+
+.navSearch > input:focus {
+  border: none;
+  outline: none;
+}
+
+.navActions  > button {
+  background-color: transparent;
+  border: none;
+}
+

@@ -21,7 +21,7 @@ export default function LoginPage() {
     };
 
     try {
-      const result = await axios.post("http://localhost:5001/user/login", data, {
+      const result = await axios.post("http://localhost:5000/login", data, {
         headers: {
           "Content-Type": "application/json",
         },
@@ -76,7 +76,7 @@ export default function LoginPage() {
         <span></span>
       </div>
 
-      <button className={style.GoogleAccount} onClick={() => window.location.href = "http://localhost:5001/auth/google"} >
+      <button className={style.GoogleAccount}>
         <img
           src="https://developers.google.com/identity/images/g-logo.png"
           alt="Google logo"

@@ -1,0 +1,91 @@
+.formContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 0px 2px rgb(172, 172, 172);
+    padding: 15px;
+    border-radius: 4px;
+    transition: transform 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+    gap: 5px;
+}
+
+.formContainer > h3 {
+    text-align: center;
+}
+
+.formContainer:hover {
+    transform:translate(-50%,-53%);
+}
+
+
+.formContainer > input[type='text'] , .formContainer > input[type='password'] {
+    padding: 8px;
+    margin-bottom: 5px;
+    transition: transform .2s ease-in;
+    border-radius: 10px;
+    border: none;
+    border: 0.5px solid rgb(135, 135, 135);
+}
+
+.formContainer > input[type='text']:focus , .formContainer > input[type='password']:focus {
+    transform: translateY(5%);
+}
+
+.formContainer > button[type='submit'] {
+    padding: 10px 5px;
+    transition: scale .2s ease-in;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    border-radius: 10px;
+}
+
+.formContainer > button:hover {
+    scale: 0.95;
+}
+
+.orContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+.orContainer > span {
+    height:2px;
+    width: 130px;
+    background-color: rgb(221, 221, 221);
+    border: none;
+}
+
+
+.GoogleAccount {
+    padding: 10px 5px;
+    transition: scale .2s ease-in;
+    border: none;
+    border: 1px solid rgb(173, 173, 173);
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.GoogleAccount > img {
+    height: 20px;
+}
+
+.togglePassword {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
