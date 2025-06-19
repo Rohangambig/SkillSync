@@ -76,7 +76,7 @@ export default function LoginPage() {
         <span></span>
       </div>
 
-      <button className={style.GoogleAccount}>
+      <button className={style.GoogleAccount} onClick={() => window.location.href = "http://localhost:5001/auth/google"} >
         <img
           src="https://developers.google.com/identity/images/g-logo.png"
           alt="Google logo"

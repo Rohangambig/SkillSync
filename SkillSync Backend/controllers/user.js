@@ -3,8 +3,8 @@ const userModel = require('../models/user');
 const userLogin = async (req, res) => {
     try {
         const { email , employeeId , password} = req.body;
-        const user =  await userModel.findOne({ email  });
-        console.log(user)
+
+        const user =  await userModel.findOne({ email });
         if(!user) return res.status(404).json({message:'user not found'});
         if(user.employeeId !== employeeId) return  res.status(401).json({message:'Invalid credentials'});
         if(user.password !== password) return res.status(401).json({message:'Invalid credentials'});

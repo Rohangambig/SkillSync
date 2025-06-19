@@ -9,10 +9,13 @@ dotenv.config();
 
 const app =  express()
 app.use(cors())
+app.use(express.json())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended :  true}));
 
 const PORT = process.env.PORT || 5002
+
+
 
 mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
