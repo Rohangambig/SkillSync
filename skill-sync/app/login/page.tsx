@@ -21,10 +21,11 @@ export default function LoginPage() {
     };
 
     try {
-      const result = await axios.post("http://localhost:5001/user/login", data, {
+      const result = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/user/login`, data, {
         headers: {
           "Content-Type": "application/json",
         },
+        withCredentials:true
       });
       console.log(result.data);
     } catch (err) {

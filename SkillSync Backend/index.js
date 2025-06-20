@@ -4,14 +4,29 @@ const dotenv = require('dotenv');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const userRouter = require('./router/user')
+const session = require('express-session');
+
 
 dotenv.config();
 
 const app =  express()
-app.use(cors())
+app.use(cors({
+    origin: process.env.CLIENT_URL, 
+  credentials: true   
+}))
 app.use(express.json())
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended :  true}));
+
+app.use(session({
+  secret:process.env.SECRET,
+  resave:false,
+  saveUninitialized:false,
+  cookie:{
+    httpOnly:true,
+    maxAge:24* 60 * 60 * 1000
+  }
+}))
 
 const PORT = process.env.PORT || 5002
 
